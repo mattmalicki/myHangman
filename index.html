@@ -4,23 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="welcome">
-        <span>Welcome</span>
-        <span>This is a well known game</span>
-        <span>Hangman</span>
-        <span>Or as it should be called...</span>
-        <span>...a BalloonExplodeWhenNotGuessTheWordMan!</span>
+    <div class="welcome">
+      <div class="container welcome__container">
+        <div class="message">
+          <span class="message__one">Welcome</span>
+          <span class="message__two">This is a well known game</span>
+          <span class="message__three">Hangman</span>
+        </div>
+        <div class="language">
+          <button
+            class="language__button language__button-en"
+            data-language="en"
+          >
+            English
+          </button>
+          <button
+            class="language__button language__button-no"
+            data-language="no"
+          >
+            Norsk
+          </button>
+          <button
+            class="language__button language__button-pl"
+            data-language="pl"
+          >
+            Polski
+          </button>
+        </div>
+        <div class="typeOrDraw">
+          <div class="typeOrDraw__word">
+            <input type="text" class="typeOrDraw__word-input" />
+            <button type="submit" class="typeOrDraw__word-button">Play</button>
+          </div>
+          <div class="typeOrDraw__random">
+            <span class="typeOrDraw__random-massage"
+              >Or just let me just for you:</span
+            >
+            <button type="button" class="typeOrDraw__random-button">
+              Draw
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container">
-      <div class="myHangman">
-        <div class="display"></div>
-        <div class="words"></div>
-        <div class="keyboard"></div>
+    <div class="myHangman">
+      <div class="container myHangman__container">
+        <div class="myHangman__display"></div>
+        <div class="myHangman__words"></div>
+        <div class="myHangman__keyboard"></div>
       </div>
     </div>
 
