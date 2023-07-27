@@ -1,0 +1,45 @@
+$phone-end: 767.99px;
+$tablet-start: 768px;
+$tablet-end: 1279.99px;
+$desktop-start: 1280px;
+
+@mixin phone {
+  @media screen and (max-width: #{$phone-end}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: #{$tablet-start}) and (max-width: #{$tablet-end}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: #{$desktop-start}) {
+    @content;
+  }
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin welcomeAnimation {
+  @keyframes welcomeAnimation {
+    0% {
+      transform: translateX(100%);
+      scale: 2;
+    }
+    50% {
+      transform: translateX(-15%);
+      scale: 1.6;
+    }
+    100% {
+      transform: translateX(0);
+      scale: 1;
+    }
+  }
+}

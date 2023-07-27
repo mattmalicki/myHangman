@@ -1,0 +1,9 @@
+.typeOrDraw {
+  width: calc(100vw - 30px);
+  height: calc(100vh - 60px);
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}

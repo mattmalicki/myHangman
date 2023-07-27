@@ -1,0 +1,50 @@
+.message {
+  width: calc(100vw - 30px);
+  height: calc(100vh - 60px);
+  flex-shrink: 0;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  &__one {
+    transform: translateX(100vw);
+    animation-fill-mode: forwards;
+    animation-name: welcomeAnimation;
+    animation-duration: 1000ms;
+    @include welcomeAnimation;
+  }
+  &__two {
+    transform: translateX(100vw);
+    animation-fill-mode: forwards;
+    animation-name: welcomeAnimation;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
+    @include welcomeAnimation;
+  }
+  &__three {
+    transform: translateX(100vw);
+    animation-fill-mode: forwards;
+    animation-name: welcomeAnimation;
+    animation-duration: 1000ms;
+    animation-delay: 2000ms;
+    @include welcomeAnimation;
+  }
+  &__four {
+    transform: translateX(100vw);
+    animation-fill-mode: forwards;
+    animation-name: welcomeAnimation;
+    animation-duration: 1000ms;
+    animation-delay: 3000ms;
+    @include welcomeAnimation;
+  }
+  &__five {
+    transform: translateX(100vw);
+    animation-fill-mode: forwards;
+    animation-name: welcomeAnimation;
+    animation-duration: 1000ms;
+    animation-delay: 4000ms;
+    @include welcomeAnimation;
+  }
+}

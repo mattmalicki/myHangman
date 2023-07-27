@@ -1,0 +1,16 @@
+.welcome {
+  width: 300vw;
+
+  padding: 30px;
+  font-size: 56px;
+  color: azure;
+  &__container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+
+    border: 3px black solid;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.503);
+  }
+}

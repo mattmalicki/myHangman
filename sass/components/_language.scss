@@ -1,0 +1,46 @@
+.language {
+  width: calc(100vw - 30px);
+  flex-shrink: 0;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: black;
+    text-shadow: 0px 0px 10px white;
+    width: 300px;
+    height: 150px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 15px;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 0px 21px 20px rgba(0, 0, 0, 0.51);
+    }
+    &:focus {
+      box-shadow: 0px 0px 21px 20px rgba(0, 0, 0, 0.51) inset;
+    }
+    &-en {
+      background-image: url("../img/english.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &-no {
+      background-image: url("../img/norwegian.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0 -20px;
+    }
+    &-pl {
+      background-image: url("../img/polish.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0 -15px;
+    }
+  }
+}

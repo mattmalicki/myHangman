@@ -1,0 +1,9 @@
+@use "./utils/variables" as *;
+@import "./utils/mixins";
+@import "./components/generals";
+@import "./components/welcome";
+@import "./components/message";
+@import "./components/words";
+@import "./components/language";
+@import "./components/typeOrDraw";
+@import "./components/myHangman";

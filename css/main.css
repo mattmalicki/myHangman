@@ -1,0 +1,295 @@
+:root {
+  --color-message: #fff;
+  --color-game: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  overflow: hidden;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.welcome {
+  width: 300vw;
+  padding: 30px;
+  font-size: 56px;
+  color: azure;
+}
+.welcome__container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  border: 3px black solid;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.503);
+}
+
+.message {
+  width: calc(100vw - 30px);
+  height: calc(100vh - 60px);
+  flex-shrink: 0;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.message__one {
+  transform: translateX(100vw);
+  animation-fill-mode: forwards;
+  animation-name: welcomeAnimation;
+  animation-duration: 1000ms;
+}
+@keyframes welcomeAnimation {
+  0% {
+    transform: translateX(100%);
+    scale: 2;
+  }
+  50% {
+    transform: translateX(-15%);
+    scale: 1.6;
+  }
+  100% {
+    transform: translateX(0);
+    scale: 1;
+  }
+}
+.message__two {
+  transform: translateX(100vw);
+  animation-fill-mode: forwards;
+  animation-name: welcomeAnimation;
+  animation-duration: 1000ms;
+  animation-delay: 1000ms;
+}
+@keyframes welcomeAnimation {
+  0% {
+    transform: translateX(100%);
+    scale: 2;
+  }
+  50% {
+    transform: translateX(-15%);
+    scale: 1.6;
+  }
+  100% {
+    transform: translateX(0);
+    scale: 1;
+  }
+}
+.message__three {
+  transform: translateX(100vw);
+  animation-fill-mode: forwards;
+  animation-name: welcomeAnimation;
+  animation-duration: 1000ms;
+  animation-delay: 2000ms;
+}
+@keyframes welcomeAnimation {
+  0% {
+    transform: translateX(100%);
+    scale: 2;
+  }
+  50% {
+    transform: translateX(-15%);
+    scale: 1.6;
+  }
+  100% {
+    transform: translateX(0);
+    scale: 1;
+  }
+}
+.message__four {
+  transform: translateX(100vw);
+  animation-fill-mode: forwards;
+  animation-name: welcomeAnimation;
+  animation-duration: 1000ms;
+  animation-delay: 3000ms;
+}
+@keyframes welcomeAnimation {
+  0% {
+    transform: translateX(100%);
+    scale: 2;
+  }
+  50% {
+    transform: translateX(-15%);
+    scale: 1.6;
+  }
+  100% {
+    transform: translateX(0);
+    scale: 1;
+  }
+}
+.message__five {
+  transform: translateX(100vw);
+  animation-fill-mode: forwards;
+  animation-name: welcomeAnimation;
+  animation-duration: 1000ms;
+  animation-delay: 4000ms;
+}
+@keyframes welcomeAnimation {
+  0% {
+    transform: translateX(100%);
+    scale: 2;
+  }
+  50% {
+    transform: translateX(-15%);
+    scale: 1.6;
+  }
+  100% {
+    transform: translateX(0);
+    scale: 1;
+  }
+}
+
+.language {
+  width: calc(100vw - 30px);
+  flex-shrink: 0;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.language__button {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: black;
+  text-shadow: 0px 0px 10px white;
+  width: 300px;
+  height: 150px;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.language__button:hover, .language__button:focus {
+  box-shadow: 0px 0px 21px 20px rgba(0, 0, 0, 0.51);
+}
+.language__button:focus {
+  box-shadow: 0px 0px 21px 20px rgba(0, 0, 0, 0.51) inset;
+}
+.language__button-en {
+  background-image: url("../img/english.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.language__button-no {
+  background-image: url("../img/norwegian.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -20px;
+}
+.language__button-pl {
+  background-image: url("../img/polish.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -15px;
+}
+
+.typeOrDraw {
+  width: calc(100vw - 30px);
+  height: calc(100vh - 60px);
+  flex-shrink: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.myHangman {
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+}
+.myHangman__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: stretch;
+  background-color: rgba(255, 255, 255, 0.486);
+  border: 3px black solid;
+  border-radius: 15px;
+}
+.myHangman__display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+}
+.myHangman__words {
+  font-size: 72px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: center;
+}
+.myHangman__keyboard {
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.myHangman__keyboard-key {
+  min-width: 70px;
+  height: 70px;
+  font-size: 24px;
+  background-color: rgba(127, 255, 212, 0.562);
+  border: 2px darkblue solid;
+  border-radius: 10px;
+  flex-basis: calc((100% - 60px) / 7);
+  outline: none;
+}
+.myHangman__keyboard-key:hover:not(:disabled), .myHangman__keyboard-key:focus:not(:disabled) {
+  background-color: rgba(190, 241, 96, 0.538);
+}
+.myHangman__keyboard-key:active:not(:disabled) {
+  box-shadow: 0px 0px 21px 20px rgba(0, 0, 0, 0.51) inset;
+}
+.myHangman__keyboard-key:disabled {
+  color: darkslategray;
+  border-color: gray;
+}
+
+.wrong:disabled {
+  background-color: rgba(255, 0, 0, 0.394);
+}
+
+.correct:disabled {
+  background-color: rgba(71, 255, 47, 0.527);
+}
+
+.letter-correct {
+  color: green;
+}
+
+.letter-wrong {
+  color: red;
+}/*# sourceMappingURL=main.css.map */
