@@ -13,6 +13,7 @@ body {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   overflow: hidden;
+  transition-duration: 1000ms;
 }
 @keyframes gradient {
   0% {
@@ -31,11 +32,16 @@ body {
   margin: 0 auto;
 }
 
+.hidden {
+  display: none;
+}
+
 .welcome {
   width: 300vw;
   padding: 30px;
   font-size: 56px;
   color: azure;
+  transition-duration: 1000ms;
 }
 .welcome__container {
   display: flex;

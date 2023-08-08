@@ -207,6 +207,7 @@ function afterType(event) {
   const hangmanEl = document.querySelector(".myHangman");
   const game = new MyHangman(hangmanEl, language, word);
   document.querySelector("body").style.transform = "translateY(-100vh)";
+  welcomeEl.style.transitionDelay = "1000ms";
   welcomeEl.style.transform = "translateX(0)";
 }
 
@@ -218,5 +219,6 @@ function afterDraw(event) {
   const hangmanEl = document.querySelector(".myHangman");
   const game = new MyHangman(hangmanEl, language, true);
   document.querySelector("body").style.transform = "translateY(-100vh)";
+  welcomeEl.style.transitionDelay = "1000ms";
   welcomeEl.style.transform = "translateX(0)";
 }
